@@ -1,11 +1,12 @@
-import './App.css';
+import './styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
 import BodyWrapper from './components/Containers/BodyWrapper'
 import HomePage from './pages/Home/home';
 import Footer from './components/Footer/Footer';
 import {BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom'
-import FormulaireInscription from './pages/FormulaireInscription/Formulaire';
+import FormulaireInscription from './pages/Formulaires/Formulaire';
+import FormulaireConnexion from './pages/Formulaires/FormConnexion';
 
 
 function App() {
@@ -16,9 +17,11 @@ function App() {
     <HomePage/>
     <Routes >
           <Route path='/inscription' element={<FormulaireInscription/>}/>
-        </Routes>
-    <Footer />
+          <Route path='/connexion' element={<FormulaireConnexion/>}/>
 
+    </Routes>
+    
+    <Footer />
     </BodyWrapper>    
   );
 }

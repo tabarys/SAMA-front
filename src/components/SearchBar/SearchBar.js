@@ -5,28 +5,35 @@ import { BsSearch } from 'react-icons/bs'
 const searchText = 'Rechercher';
 
 const StyledInput = styled.input`
+    margin: 15px;
     text-align: center;
-    font-size: 1.5rem;
+    align-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    width: 200px;
 `
 const SearchBarWrapper = styled.div`
-    displya:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     border: solid;
+    font-size: medium;
+    margin: 5px;
 `
 
 export default function SearchBarAPI(props) {
 
     return (
-        <SearchBarWrapper  className='d-flex justify-content-around'>
+        <SearchBarWrapper  className='d-flex'>
             <label>Départ</label>
             <StyledInput placeholder="Ville de départ" className='col-md-4' />
             <label>Arrivée</label>
-            <StyledInput placeholder="Ville d'arrivée" className='col-md-4' /><br></br>
+            <StyledInput placeholder="Ville d'arrivée" className='col-md-4' />
             <label>Date aller</label>
-            <StyledInput placeholder="Date aller" className='col-md-4' />
+            <StyledInput placeholder="Aller" className='col-md-4' />
             <label>Date retour</label>
-            <StyledInput placeholder="Date retour" className='col-md-4' />
+            <StyledInput placeholder="Retour" className='col-md-4' />
             <StyledButton className='col-md-4' icon={<BsSearch />} text={searchText}></StyledButton>
         </SearchBarWrapper>
     )

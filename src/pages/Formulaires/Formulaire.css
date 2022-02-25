@@ -32,9 +32,14 @@ input {
     text-align: center;
 }
 
-.creerProfil {
+.submit {
     width: 150px;
     font-size: medium;
     margin-left: 80px;
     border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.p{
+    text-align: center;
 }

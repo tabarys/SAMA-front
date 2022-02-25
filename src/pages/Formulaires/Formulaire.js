@@ -1,5 +1,7 @@
-import { Button } from 'react-bootstrap';
 import './Formulaire.css'
+import FormulaireConnexion from './FormConnexion';
+import { NavLink } from 'react-router-dom';
+
 
 const FormulaireInscription = () => {
     return (
@@ -25,24 +27,19 @@ const FormulaireInscription = () => {
                 <label htmlFor="ville">Ville :</label>
                 <input id="ville" name="ville" placeholder='Nom de la ville'/>
                 <br></br>
-                
+
                 <label htmlFor="mdp">Mot de passe :</label><br></br>
                 <input id="mdp" name="mdp" placeholder='Choisir un mot de passe '/><br></br>
             </form>
 
-                <button className='creerProfil' type='sumbit'> Créer le profil </button>
-
-            <h1>Vous avez déjà un compte SAMA Travel?  </h1>
-            <h2>Connectez-vous:</h2>
-            <form className="form">
-                <label htmlFor="nom">Adresse mail:</label><br></br>
-                <input id="Nom" name="Nom" placeholder='Entrez votre email' /><br></br>
-
-                <label htmlFor="nom">Mot de passe:</label><br></br>
-                <input id="Nom" name="Nom" placeholder='Entrez votre mot de passe'/><br></br>
-            </form>
-
-
+                <button className='submit' type='sumbit'> Créer le profil </button>
+            <p className='p'>
+            <h1>Vous avez déjà un compte SAMA Travel?
+            
+            <NavLink to="/connexion"><button className='submit' onClick={<FormulaireConnexion/>}>Cliquez ici</button></NavLink></h1> 
+                
+                
+            </p>
         </>
     )
 }

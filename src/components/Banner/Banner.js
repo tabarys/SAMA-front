@@ -12,7 +12,6 @@ const BannerText = styled.p`
 `
 export default function Banner(props) {
 
-
     return (
         <BannerCotainer>
             <BannerText><b>Bienvenue chez SAMA Travel!</b> <br></br> Trouvez un billet de train flexible pour votre prochain voyage en France</BannerText>
