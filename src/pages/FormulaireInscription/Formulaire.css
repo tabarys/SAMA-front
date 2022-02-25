@@ -1,0 +1,40 @@
+.form{
+    font-size: medium;
+    align-items: center;
+    align-content: center;
+    padding: 15px;
+    margin: 5px;
+    margin-left: 25px;
+    margin-bottom: auto;
+    text-align: left;
+}
+
+h1 {
+    padding: 15px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+h2 {
+    padding: 15px;
+    margin-left: 50px;
+    margin-top: 0%;
+    margin-bottom: -5px;
+}
+
+input {
+    margin: 2px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    margin-left: 5px;
+    padding: auto;
+    width: 210px;
+    text-align: center;
+}
+
+.creerProfil {
+    width: 150px;
+    font-size: medium;
+    margin-left: 80px;
+    border-radius: 10px;
+}
