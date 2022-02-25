@@ -1,4 +1,4 @@
-import './styles/App.css';
+import './style/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
 import BodyWrapper from './components/Containers/BodyWrapper'
@@ -7,7 +7,6 @@ import Footer from './components/Footer/Footer';
 import {BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom'
 import FormulaireInscription from './pages/Formulaires/Formulaire';
 import FormulaireConnexion from './pages/Formulaires/FormConnexion';
-
 
 function App() {
   return (
